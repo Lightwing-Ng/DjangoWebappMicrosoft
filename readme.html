@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Web App Configuration</title>
+    <style type="text/css">
+        body {
+            font-family: "Microsoft Yahei UI";
+            font-weight: 200;
+            font-size: 1.25em;
+        }
+
+        p, h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            padding-top: 1em;
+        }
+
+        h1.top {
+            padding-top: 0em;
+        }
+
+        h2 {
+            font-size: 16pt;
+            font-weight: 300;
+            padding-top: 0.5em;
+            padding-left: 0em;
+        }
+
+        p {
+            padding-left: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        p.hint {
+            color: #666666;
+        }
+
+        code {
+            font-family: CamingoCode;
+        }
+
+        ol {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        ol > li {
+            padding-top: 1.5em;
+        }
+
+        li > img {
+            vertical-align: middle;
+            width: 60%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+<h1 class="top">One More Thing...</h1>
+<p>
+    Before running this project, you may want to <strong>create a super user</strong>.
+</p>
+
+
+<h1>Synchronize the Database</h1>
+<p>
+    This project has default settings for the database (it uses sqlite).
+    If you need a super user, you'll need to create one before running the project.
+</p>
+
+<ol>
+    <li>Open Solution Explorer.</li>
+    <li>
+        <p>Right-click the project node and select Python-&gt;Django Create Superuser.</p>
+        <img src="DjangoCreateSuperuser.png">
+        <p>Or in Command line(macOS): </p>
+        <code>
+            $ python manage.py createsuperuser
+        </code>
+        <img src="DjangoCreateSuperuserInCommandLine.png">
+    </li>
+    <li>
+        Enter account details when prompted. This creates a new account, and
+        the details do not need to match any of your existing accounts.
+    </li>
+</ol>
+</body>
+</html>
